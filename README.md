@@ -7,20 +7,15 @@
   - Docker
   - Any other tool/libary you decide to use
 
-- fork this repository and clone the fork onto your local machine
-
-- create a new branch for your solution
-
-    ```bash
-    git checkout -b my-solution
-    ```
-
-- feel free to commit & push (as you usually would) to this newly created branch as you work on your solution
+- **_Setup_**:
+  - fork this repository and clone the fork onto your local machine
+  - create a new branch for your solution
+  - feel free to commit & push (as you usually would) to this newly created branch as you work on your solution
 
 - **_Submission_**: When you are ready to submit your solution, you can either
   - open a Pull Request into the `main` branch of the *original* repository (from your branch on your fork). We will get a notification once you open your PR and we will review your solution. Feel free to also let us know that you've submitted it if you'd like.
   OR
-  - zip your repo and email it to us if you prefer to keep your solution private. PS: please zip your `.git` as well as we'd like to see how you've at the solution. (`zip -r my-solution.zip .` should do the trick)
+  - zip your repo and email it to us if you prefer to keep your solution private. PS: please zip your `.git` as well as we'd like to see how you've approached the solution. (`zip -r my-solution.zip .` should do the trick)
 
 - And please don't hesitate to reach out to us if any of these instructions are not clear or if you have any questions.
 
@@ -58,7 +53,7 @@ Good luck!
 
 ### Hints / Tips
 
-- We have intentionally left out parts of the tasks open ended and ambiguous to not lead you to particular approached. However, if you'd like hints, tips or suggestions to get started, we are happy to share them with you. They are currently in the form of a markdown file called `hints.md` in a password protected zip called `hints.zip`.
+- We have intentionally left out parts of the tasks open ended and ambiguous to not lead you to a particular approach. However, if you'd like hints, tips or suggestions to get started, we are happy to share them with you. They are currently in the form of a markdown file called `hints.md` in a password protected zip `hints.zip`.
 - Do reachout to us if you'd like access these.
 
 ## References
