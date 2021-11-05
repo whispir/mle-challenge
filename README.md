@@ -31,11 +31,11 @@ Good luck!
 
 - _Task_:
   - [ ] Build and Train a Machine Learning model to predict `Active Power` (and we can expect other columns to be provided as input features).
-        - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
-        - We won't be judging your modelling/Data Science skills. We are more interested in your general problem solving, engineering, and applied ML skills.
+    - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
+    - We won't be judging your modelling/Data Science skills. We are more interested in your general problem solving, engineering, and applied ML skills.
   - [ ] Operationalise training
-        - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
-        - Please automate & containerise parts (or all) of your building, testing & training processes as you see fit.  
+    - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
+    - Please automate & containerise parts (or all) of your building, testing & training processes as you see fit.  
 
 ### Part 2: Serving
 
@@ -43,13 +43,13 @@ Good luck!
 
 - _Tasks_:
   - [ ] Build a REST API to serve your model
-        - Pick your best model from the previous part of the challenge
-        - Wrap a REST API around your model (using tools like `flask`, `django`, `fastapi`, etc...). We'd prefer if you don't resort to off the shelf serving tools like `ternsorflow serving` or `torch serve` as we want to see that you can build a simple model serving system from scratch.
-        - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
-        - Bonus points if you define formalise your API spec with an API specification standard such as `OpenAPI/Swagger`.
+    - Pick your best model from the previous part of the challenge
+    - Wrap a REST API around your model (using tools like `flask`, `django`, `fastapi`, etc...). We'd prefer if you don't resort to off the shelf serving tools like `ternsorflow serving` or `torch serve` as we want to see that you can build a simple model serving system from scratch.
+    - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
+    - Bonus points if you define formalise your API spec with an API specification standard such as `OpenAPI/Swagger`.
   - [ ] Operationalise serving
-        - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
-        - Please automate & containerise parts (or all) of your building, testing & serving processes as you see fit.
+    - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
+    - Please automate & containerise parts (or all) of your building, testing & serving processes as you see fit.
 
 ### Hints / Tips
 
