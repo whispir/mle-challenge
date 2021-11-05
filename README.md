@@ -46,7 +46,6 @@ Good luck!
     - Pick your best model from the previous part of the challenge
     - Wrap a REST API around your model (using tools like `flask`, `django`, `fastapi`, etc...). We'd prefer if you don't resort to off the shelf serving tools like `ternsorflow serving` or `torch serve` as we want to see that you can build a simple model serving system from scratch.
     - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
-    - Bonus points if you define formalise your API spec with an API specification standard such as `OpenAPI/Swagger`.
   - [ ] Operationalise serving
     - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
     - Please automate & containerise parts (or all) of your building, testing & serving processes as you see fit.
