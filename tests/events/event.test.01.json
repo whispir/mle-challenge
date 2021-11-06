@@ -1,0 +1,21 @@
+{
+  "AmbientTemperatue": 39.27723693847656,
+  "BearingShaftTemperature": 46.936134338378906,
+  "Blade1PitchAngle": 33.023277282714844,
+  "Blade2PitchAngle": 33.02322006225586,
+  "Blade3PitchAngle": 33.02322006225586,
+  "ControlBoxTemperature": 0.0,
+  "GearboxBearingTemperature": 57.79543685913086,
+  "GearboxOilTemperature": 56.423370361328125,
+  "GeneratorRPM": 79.65889739990234,
+  "GeneratorWinding1Temperature": 62.350704193115234,
+  "GeneratorWinding2Temperature": 61.8070182800293,
+  "HubTemperature": 46.003814697265625,
+  "MainBoxTemperature": 50.08749008178711,
+  "NacellePosition": 46.900001525878906,
+  "ReactivePower": -13.56698989868164,
+  "RotorRPM": 0.6345493197441101,
+  "TurbineStatus": 2.0,
+  "WindDirection": 46.900001525878906,
+  "WindSpeed": 2.222944974899292
+}

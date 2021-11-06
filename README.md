@@ -1,5 +1,9 @@
 # 🤖 E2E ML Engineering Challenge
 
+## Solution
+
+Please see [INSTRCTION](INSTRUCTION.md)
+
 ## Setup and Submission Instructions
 
 - you'll be using the following tools to complete the challenge
@@ -27,15 +31,24 @@ Good luck!
 
 - In this part of the challenge, you'll code, train & operationalise an ML model to predict the Wind Power Generation for a given day.
 
-- _Dataset_: [Wind Turbine Data](./data/wind_power_generation.csv). This dataset contains historical data for a wind turbine. It contains various weather, turbine and rotor features. Data has been recorded from January 2018 till March 2020. Readings have been recorded at a 10-minute interval.
+- _Dataset_: [Wind Turbine Data](./data/wind_power_generation.csv). 
+  This dataset contains historical data for a wind turbine. 
+  It contains various weather, turbine and rotor features. 
+  Data has been recorded from January 2018 till March 2020. 
+  Readings have been recorded at a 10-minute interval.
 
 - _Task_:
-  - [ ] Build and Train a Machine Learning model to predict `Active Power` (and we can expect other columns to be provided as input features).
-    - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) or any off the shelf models.
-    - We won't be judging your modelling/Data Science skills. We are more interested in your general problem solving, engineering, and applied ML skills.
+  - [ ] Build and Train a Machine Learning model to predict `Active Power` 
+    (and we can expect other columns to be provided as input features).
+    - Feel free to use any ML library you like (e.g. `sklearn`, `tensorflow`, `pytorch`, etc...) 
+      or any off the shelf models.
+    - We won't be judging your modelling/Data Science skills. 
+      We are more interested in your general problem solving, engineering, and applied ML skills.
   - [ ] Operationalise training
-    - We except your code to be production grade & deployable, so we look at things like repo structure, code quality, tests, debuggability, reproducibility etc...
-    - Please automate & containerise parts (or all) of your building, testing & training processes as you see fit.  
+    - We except your code to be production grade & deployable, so we look at things like 
+      repo structure, code quality, tests, debuggability, reproducibility etc...
+    - Please automate & containerise parts (or all) of your building, 
+      testing & training processes as you see fit.  
 
 ### Part 2: Serving
 
@@ -58,3 +71,4 @@ Good luck!
 ## References
 
 - [Wind Power Forcasting Dataset from Kaggle](https://www.kaggle.com/theforcecoder/wind-power-forecasting)
+
