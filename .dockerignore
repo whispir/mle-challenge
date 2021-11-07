@@ -1,0 +1,4 @@
+./k8s.yaml
+scripts/
+/*.yaml
+README.md

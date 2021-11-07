@@ -37,7 +37,7 @@ class ResponseBody(BaseModel):
 
 
 def _estimate(body):
-    if isinstance(body, dict) and isinstance(next(iter(body.values())), float):
+    if isinstance(body, dict) and all([isinstance(x, float) for x in body.values()]):
         # data type check
         input_data = {k: torch.tensor([v], dtype=torch.float32) for k, v in body.items()}
     else:
@@ -70,4 +70,4 @@ async def estimate(request: Request):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

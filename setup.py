@@ -1,7 +1,7 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
 
 print(setuptools.find_packages())
 
@@ -11,7 +11,7 @@ setuptools.setup(
     author="Whispir AI",
     author_email="aiml@whispir.com",
     description="Whispir AI Wind Active Power Estimator",
-    long_description=long_description,
+    long_description="",
     long_description_content_type="text/markdown",
     url="https://github.com/ruodingt/mle-challenge",
     packages=['windml'],
@@ -26,5 +26,6 @@ setuptools.setup(
                       'uvloop==0.16.0',
                       'httptools==0.3.0',
                       'pytorch-lightning==1.5.0',
+                      'jsonargparse',
                       'pandas==1.3.4']
 )

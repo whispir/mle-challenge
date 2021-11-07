@@ -6,7 +6,7 @@ metadata:
   labels:
     app: wind-estimator
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: wind-estimator
@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: wind-estimator
-          image: wml
-          imagePullPolicy: IfNotPresent
+          image: $IMAGE
+          imagePullPolicy: Never
           ports:
             - containerPort: 8000
           env:
@@ -29,6 +29,15 @@ spec:
                   key: db_root_password
             - name: db_name
               value: wind-estimator
+          resources:
+            limits:
+              cpu: 1
+              ephemeral-storage: 1Gi
+              memory: 2Gi
+            requests:
+              cpu: 1
+              ephemeral-storage: 1Gi
+              memory: 2Gi
 
 ---
 apiVersion: v1

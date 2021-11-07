@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: drp-product-url-crawler
+spec:
+  backoffLimit: 1000
+  parallelism: 1 # Number of Pods start together with Job
+  template:
+    spec:
+      containers:
+        - name: drp-product-url-crawler
+          image: $IMAGE
+          imagePullPolicy: Never
+          command: ["python3", "windml/train_net.py"]
+          args: ["--config", "configs/config.test.yaml"]
+          resources:
+            limits:
+              cpu: 3
+              ephemeral-storage: 1Gi
+              memory: 6Gi
+            requests:
+              cpu: 2
+              ephemeral-storage: 1Gi
+              memory: 4gi
+      restartPolicy: "Never"

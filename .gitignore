@@ -49,3 +49,4 @@ Thumbs.db
 *.wmv
 
 /windml.egg-info/
+/minikube-linux-amd64

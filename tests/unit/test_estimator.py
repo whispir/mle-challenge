@@ -6,7 +6,6 @@ import pytest
 from windml.app import _estimate
 
 TEST_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(TEST_ROOT)
 
 
 @pytest.fixture
@@ -40,3 +39,9 @@ class TestEstimator:
             event_01[x] = '?'
         r = _estimate(body=event_01)
         assert r.status_code == 501
+
+    @pytest.mark.skip(reason="Not yet implemented")
+    def test_model_performance(self):
+        # TODO test on a small benchmark dataset and make sure the mse loss is within reasonable e range
+        raise NotImplementedError()
+
