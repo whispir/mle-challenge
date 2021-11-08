@@ -14,7 +14,7 @@ source scripts/testing.sh
 # Training:
 
 
-**Training on VM**
+**Training on VM/Local**
 - A dir called `lightning_logs` will be created (under the working dir by default) and contain the checkpoint, 
   tensorboard event and `config.yaml` 
   so you can always reproduce the experiments with the yaml. 
@@ -24,6 +24,7 @@ source scripts/testing.sh
   Again a copy of `.yaml` will always be saved to `lightning_logs`.
   
 ```bash
+pip3 install -e .
 # use config file
 python3 windml/train_net.py --config configs/config.test.yaml
 # detailed instruction on CLI:
@@ -44,8 +45,9 @@ source scripts/train-k8s-job.sh
 ```
 
 # Serving & Deployment
-**Local testing and debug:**
+**Local/VM testing and debug:**
 ```bash
+pip3 install -e .
 python3 windml/app.py
 ```
 
