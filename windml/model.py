@@ -44,6 +44,8 @@ class WindRegressor(LightningModule):
         self.log("test_mse", loss)
         return loss
 
+    validation_step = test_step
+
     def configure_optimizers(self):
         optimizer = torch.optim.Adadelta(self.model.parameters(), lr=self.hparams.lr)
         return [optimizer], [torch.optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=self.hparams.gamma)]

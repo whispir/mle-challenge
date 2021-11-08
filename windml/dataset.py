@@ -28,6 +28,8 @@ class WindDataModule(LightningDataModule):
                           batch_size=self.hparams.batch_size,
                           num_workers=self.num_workers)
 
+    val_dataloader = test_dataloader
+
 
 def feature_engineering(x: dict):
     # TODO: Feature engineering (e.g. Wind Angle -> sin/cos)

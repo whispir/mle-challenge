@@ -8,6 +8,12 @@
 
 # Training:
 
+## Testing
+Build docker and run tests
+```
+source scripts/testing.sh
+```
+
 ## Training on VM
 - A dir called `lightning_logs` will be created (under the working dir by default) and contain the checkpoint, 
   tensorboard event and `config.yaml` 

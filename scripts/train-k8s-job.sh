@@ -1,18 +1,7 @@
 #!/bin/bash
 
-git_hash=$(git log --pretty=format:'%h' -n 1)
-echo $git_hash
-
-read -p "Enter docker image tag name [${git_hash}]: " tag
-
-tag=${tag:-$git_hash}
-
-IMAGE=$(echo ruodingt7/wml:$tag)
-
-echo $IMAGE
-echo -e build image with name:  "\e[31m$IMAGE\e[0m"
-
-docker build -t $IMAGE .
+SCRIPTS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+source "$SCRIPTS_DIR/build.sh"
 
 read -p "Enter target k8s namespace [default]: " namespace
 namespace=${namespace:-default}
