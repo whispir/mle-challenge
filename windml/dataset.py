@@ -55,7 +55,7 @@ def pre_process(x):
 
 class WindDataset(Dataset):
     def __init__(self):
-        df = pd.read_csv('../data/wind_power_generation.csv')
+        df = pd.read_csv(os.path.join(REPO_ROOT, 'data/wind_power_generation.csv'))
         df = df.interpolate(limit=20).dropna().reset_index()
         df.pop('WTG')
         df.pop('index')

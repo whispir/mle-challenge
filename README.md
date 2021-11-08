@@ -1,8 +1,8 @@
 # 🤖 E2E ML Engineering Challenge
 
-## Solution
+## SUBMISSION
 
-Please see [INSTRCTION](INSTRUCTION.md)
+Please see [SUBMISSION](SUBMISSION.md)
 
 ## Setup and Submission Instructions
 

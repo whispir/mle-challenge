@@ -19,16 +19,10 @@ spec:
         - name: wind-estimator
           image: $IMAGE
           imagePullPolicy: Never
+          command: ["uvicorn", "windml.app:app"]
+          args: ["--reload", "--host", "0.0.0.0"]
           ports:
             - containerPort: 8000
-          env:
-            - name: db_root_password
-              valueFrom:
-                secretKeyRef:
-                  name: wind-estimator-secrets
-                  key: db_root_password
-            - name: db_name
-              value: wind-estimator
           resources:
             limits:
               cpu: 1
@@ -43,10 +37,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-service
+  name: wind-estimator-service
 spec:
   ports:
-  - port: 8000
+  - port: 8002
     protocol: TCP
     targetPort: 8000
   selector:

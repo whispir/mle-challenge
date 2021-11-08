@@ -11,7 +11,7 @@ IMAGE=$(echo ruodingt7/wml:$tag)
 echo -e build image with name:  "\e[31m$IMAGE\e[0m"
 read -p "Proceed?" confirm
 
-echo use image: "\e[31m$IMAGE\e[0m"
+echo -e use image: "\e[31m$IMAGE\e[0m"
 docker build -t $IMAGE .
 
 

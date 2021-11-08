@@ -15,11 +15,11 @@ spec:
           args: ["--config", "configs/config.test.yaml"]
           resources:
             limits:
-              cpu: 3
-              ephemeral-storage: 1Gi
-              memory: 6Gi
-            requests:
               cpu: 2
               ephemeral-storage: 1Gi
-              memory: 4gi
+              memory: 4Gi
+            requests:
+              cpu: 1
+              ephemeral-storage: 1Gi
+              memory: 2Gi
       restartPolicy: "Never"

@@ -20,3 +20,5 @@ namespace=${namespace:-default}
 eval $(minikube docker-env)
 echo use image $IMAGE
 IMAGE=$IMAGE envsubst < k8s-train-job.yaml | kubectl -n $namespace apply -f -
+
+watch -n 1 kubectl get all

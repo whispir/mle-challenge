@@ -1,9 +1,22 @@
+# Intro & Prerequisite:
+
+- kubectl
+- minikube
+- Docker
+- Python3.8 
+
+
 # Training:
 
 ## Training on VM
-- A dir called `lightning_logs` will be created and contain the checkpoint & tensorboard event
-- Each experiment should have their own `.yaml` file (under [configs](configs)), 
-  alternatively one can overwrite the default value through CLI
+- A dir called `lightning_logs` will be created (under the working dir by default) and contain the checkpoint, 
+  tensorboard event and `config.yaml` 
+  so you can always reproduce the experiments with the yaml. 
+  Ideally this logging directory could go to s3 or EFS, so we have a centralised place to manage those "by-products"
+- Each experiment could have their own `.yaml` file (under [configs](configs)), 
+  alternatively one can overwrite the default value through CLI. 
+  Again a copy of `.yaml` will always be saved to `lightning_logs`.
+  
 ```bash
 # use config file
 python3 windml/train_net.py --config configs/config.test.yaml
@@ -50,6 +63,6 @@ source scripts/deploy.sh
 - Ops
     - [ ] Process: CT/Manual Training -> checkpoint selection -> CI/Test -> artifact(image) -> CD -> Staging -> UAT/Sandbox -> Prod
 - Tests/CI
-    - [*] end2end test 
+    - [*] API e2e test 
     - [ ] CI
     - [x] unit tests
