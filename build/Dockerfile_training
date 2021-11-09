@@ -1,0 +1,18 @@
+FROM python:3.8-slim-buster
+
+RUN apt-get update && apt-get install -y --no-install-recommends bash
+
+# set Python virtual environment and PATH environment variable
+RUN python3 -m venv /home/venv
+ENV PATH="/home/venv/bin:$PATH"
+
+RUN pip install --no-cache-dir numpy pandas scikit-learn==0.24.2
+
+# Set current working directory
+WORKDIR /opt/app
+
+COPY .container/model_training ./model_training
+COPY .container/data ./data
+COPY .container/run_training.py ./
+
+CMD [ "python3", "/opt/app/run_training.py" ]
